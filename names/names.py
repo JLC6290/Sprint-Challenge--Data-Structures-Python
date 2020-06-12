@@ -18,7 +18,11 @@ duplicates = []  # Return the list of duplicates in this data structure
 #         if name_1 == name_2:
 #             duplicates.append(name_1)
 
+# Above algorithm has a time complexity of O(n^2), i.e. polynomial
+
 duplicates = set(names_1) & set(names_2)
+
+# I believe the time complexity of usint this method is O(n), i.e. linear.
 
 # Check that the duplicate lists match
 # is_correct = set(duplicates) == set(set_duplicates)
